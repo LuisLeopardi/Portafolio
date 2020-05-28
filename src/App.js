@@ -14,8 +14,8 @@ return (
 
 <Router>
   <Switch>
-    <Route path="/" exact component={FrontPage}/>
-    <Route path="/about" exact component={About}/>
+    <Route exact path="/" exact render={()=> <FrontPage/> } />
+    <Route exact path="/" exact render={()=> <About/> } />
   </Switch>
 </Router>
 
