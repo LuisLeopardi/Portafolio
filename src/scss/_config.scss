@@ -1,0 +1,48 @@
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+        div {
+            display: flex;
+        }
+        ul {
+            display: flex;
+        }
+        li {
+            display: flex;
+        }
+        header {
+            display: flex;
+        }
+        footer {
+            display: flex;
+        }
+        main {
+            display: flex;
+        }
+        section {
+            display: flex;
+        }
+}
+
+@mixin flex-center-center {
+    @include flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-vertical-center {
+    @include flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin box-with-image-text {
+    @include flex;
+    div {
+        @include flex-vertical-center
+    }
+}
+
+
+

@@ -1,0 +1,793 @@
+* {
+  position: relative;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  color: #000;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #c7c7c7;
+}
+
+.wrap {
+  background-color: #fff;
+}
+
+.navbar {
+  display: flex;
+  height: 30px;
+  background-color: #d7d5e9;
+}
+.navbar a, .navbar p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #202020;
+  height: 100%;
+  width: 25%;
+  font-size: 70%;
+}
+.navbar a div, .navbar p div {
+  display: flex;
+}
+.navbar a ul, .navbar p ul {
+  display: flex;
+}
+.navbar a li, .navbar p li {
+  display: flex;
+}
+.navbar a header, .navbar p header {
+  display: flex;
+}
+.navbar a footer, .navbar p footer {
+  display: flex;
+}
+.navbar a main, .navbar p main {
+  display: flex;
+}
+.navbar a section, .navbar p section {
+  display: flex;
+}
+.navbar a:hover, .navbar p:hover {
+  background-color: #a2ff95;
+}
+.navbar p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: default;
+}
+.navbar p div {
+  display: flex;
+}
+.navbar p ul {
+  display: flex;
+}
+.navbar p li {
+  display: flex;
+}
+.navbar p header {
+  display: flex;
+}
+.navbar p footer {
+  display: flex;
+}
+.navbar p main {
+  display: flex;
+}
+.navbar p section {
+  display: flex;
+}
+.navbar i {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 0 0 2px;
+  font-size: 60%;
+}
+.navbar i div {
+  display: flex;
+}
+.navbar i ul {
+  display: flex;
+}
+.navbar i li {
+  display: flex;
+}
+.navbar i header {
+  display: flex;
+}
+.navbar i footer {
+  display: flex;
+}
+.navbar i main {
+  display: flex;
+}
+.navbar i section {
+  display: flex;
+}
+
+.logo {
+  font-size: 80%;
+  width: 25%;
+  padding: 5px;
+  color: #27a700;
+  letter-spacing: 1px;
+}
+.logo i {
+  font-size: 110%;
+  color: #006eff;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 5px;
+  margin: 0 0 20px 0;
+}
+.header div {
+  display: flex;
+}
+.header ul {
+  display: flex;
+}
+.header li {
+  display: flex;
+}
+.header header {
+  display: flex;
+}
+.header footer {
+  display: flex;
+}
+.header main {
+  display: flex;
+}
+.header section {
+  display: flex;
+}
+.header div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.header div div {
+  display: flex;
+}
+.header div ul {
+  display: flex;
+}
+.header div li {
+  display: flex;
+}
+.header div header {
+  display: flex;
+}
+.header div footer {
+  display: flex;
+}
+.header div main {
+  display: flex;
+}
+.header div section {
+  display: flex;
+}
+.header img {
+  width: 45%;
+  max-width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px 0px #727272;
+}
+.header h1 {
+  color: #181818;
+  font-size: 100%;
+  margin: 0 0 5px 0;
+}
+.header h2 {
+  color: #4d4d4d;
+  font-size: 80%;
+  margin: 0 0 10px 0;
+}
+.header p {
+  font-size: 75%;
+  text-align: center;
+}
+.header div {
+  padding: 10px 0 10px 3px;
+  width: 55%;
+}
+.header b {
+  font-size: 110%;
+  color: #01a001;
+}
+.header b:first-of-type {
+  color: #0167c7;
+}
+.header section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 15px 0 0 0;
+}
+.header section div {
+  display: flex;
+}
+.header section ul {
+  display: flex;
+}
+.header section li {
+  display: flex;
+}
+.header section header {
+  display: flex;
+}
+.header section footer {
+  display: flex;
+}
+.header section main {
+  display: flex;
+}
+.header section section {
+  display: flex;
+}
+.header section img {
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+  margin: 0 2px 0 2px;
+}
+
+.checkOut {
+  text-align: center;
+  width: 100%;
+  font-size: 110%;
+  color: #1d1d1d;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 20px 0 20px 0;
+  box-shadow: 1px 1px 10px 2px rgba(65, 65, 65, 0.5);
+  background-color: #ebebeb;
+  padding: 10px 0 10px 0;
+}
+.project div {
+  display: flex;
+}
+.project ul {
+  display: flex;
+}
+.project li {
+  display: flex;
+}
+.project header {
+  display: flex;
+}
+.project footer {
+  display: flex;
+}
+.project main {
+  display: flex;
+}
+.project section {
+  display: flex;
+}
+.project div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.project div div {
+  display: flex;
+}
+.project div ul {
+  display: flex;
+}
+.project div li {
+  display: flex;
+}
+.project div header {
+  display: flex;
+}
+.project div footer {
+  display: flex;
+}
+.project div main {
+  display: flex;
+}
+.project div section {
+  display: flex;
+}
+.project img {
+  width: 50%;
+  max-width: 500px;
+}
+.project h1 {
+  color: #181818;
+  font-size: 90%;
+  text-align: center;
+  margin: 0 0 5px 0;
+}
+.project div {
+  width: 50%;
+  padding: 0 0 0 6px;
+}
+.project section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.project section div {
+  display: flex;
+}
+.project section ul {
+  display: flex;
+}
+.project section li {
+  display: flex;
+}
+.project section header {
+  display: flex;
+}
+.project section footer {
+  display: flex;
+}
+.project section main {
+  display: flex;
+}
+.project section section {
+  display: flex;
+}
+.project:last-of-type {
+  margin: 20px auto 0 auto;
+  padding: 0 0 20px 0;
+}
+
+.tag {
+  padding: 4px;
+  background-color: blue;
+  color: #fff;
+  font-size: 60%;
+  border-radius: 2px;
+  margin: 1px;
+}
+
+.dep {
+  color: #636363;
+  font-size: 60%;
+  margin: 1px;
+}
+
+.description {
+  margin: 2px 0 0 0;
+  font-size: 65%;
+  text-align: center;
+}
+
+.view {
+  padding: 6px;
+  margin: 8px 10px 5px 10px;
+  font-size: 60%;
+  width: 35%;
+  max-width: 200px;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: 0.1s linear all;
+}
+
+.online {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #008cff;
+}
+.online:hover {
+  background-color: rgba(0, 140, 255, 0.356);
+  color: black;
+}
+
+.github {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #00ff0d;
+}
+.github:hover {
+  background-color: rgba(0, 255, 13, 0.356);
+  color: black;
+}
+
+.about-section {
+  margin: 20px 0 20px 0;
+  padding: 0 10px 0 15px;
+}
+.about-section span {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  left: 3px;
+  top: 0;
+}
+
+.about-headline {
+  font-size: 90%;
+  color: #161616;
+  margin: 0 0 10px 0;
+}
+
+.about-p {
+  line-height: 22px;
+  font-size: 80%;
+}
+
+footer {
+  padding: 5px;
+  margin: 20px 0 0 0;
+  background-color: #d7d5e9;
+  letter-spacing: 1px;
+}
+footer p {
+  font-size: 70%;
+  color: #222222;
+}
+
+@media (min-width: 481px) {
+  .logo {
+    font-size: 120%;
+    width: 25%;
+    padding: 5px;
+  }
+  .logo i {
+    font-size: 110%;
+  }
+
+  .navbar {
+    height: 40px;
+  }
+  .navbar a, .navbar p {
+    width: 25%;
+    font-size: 90%;
+  }
+  .navbar i {
+    margin: 0 0 0 2px;
+    font-size: 70%;
+  }
+
+  .header {
+    padding-top: 15px;
+    margin: 0 0 30px 0;
+  }
+  .header h1 {
+    font-size: 120%;
+    margin: 0 0 10px 0;
+  }
+  .header h2 {
+    font-size: 100%;
+    margin: 0 0 15px 0;
+  }
+  .header p {
+    font-size: 90%;
+  }
+  .header div {
+    padding: 10px 0 10px 3px;
+  }
+  .header b {
+    font-size: 120%;
+  }
+  .header section {
+    margin: 15px 0 0 0;
+  }
+  .header section img {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px 0 5px;
+  }
+
+  .checkOut {
+    text-align: center;
+    width: 100%;
+    font-size: 120%;
+    color: #1d1d1d;
+    margin: 0 0 30px 0;
+  }
+
+  .project {
+    margin: 20px 0 20px 0;
+  }
+  .project h1 {
+    font-size: 110%;
+    margin: 0 0 10px 0;
+  }
+
+  .tag {
+    padding: 6px;
+    color: #fff;
+    font-size: 70%;
+    border-radius: 5px;
+    margin: 1px 3px 1px 3px;
+  }
+
+  .dep {
+    font-size: 65%;
+    margin: 5px 3px 1px 3px;
+  }
+
+  .description {
+    margin: 5px 0 0 0;
+    font-size: 80%;
+  }
+
+  .view {
+    font-size: 80%;
+    width: 35%;
+  }
+
+  .online, .github {
+    border-width: 0 0 2px 0;
+  }
+
+  .about-section {
+    margin: 40px 0 40px 0;
+    padding: 0 10px 0 15px;
+  }
+
+  .about-headline {
+    font-size: 120%;
+    color: #161616;
+    margin: 0 0 10px 0;
+  }
+
+  .about-p {
+    line-height: 22px;
+    font-size: 100%;
+  }
+
+  footer {
+    padding: 10px;
+  }
+  footer p {
+    font-size: 80%;
+  }
+}
+@media (min-width: 769px) {
+  .wrap {
+    width: 90%;
+    margin: auto;
+  }
+
+  .logo {
+    padding: 10px 0 10px 30px;
+    font-size: 150%;
+    width: 25%;
+  }
+  .logo i {
+    font-size: 110%;
+  }
+
+  .navbar a, .navbar p {
+    font-size: 100%;
+  }
+  .navbar i {
+    font-size: 75%;
+  }
+
+  .header {
+    margin: 0 0 40px 0;
+  }
+  .header h1 {
+    font-size: 150%;
+    margin: 0 0 13px 0;
+  }
+  .header h2 {
+    font-size: 120%;
+    margin: 0 0 18px 0;
+  }
+  .header p {
+    font-size: 100%;
+  }
+  .header b {
+    font-size: 130%;
+  }
+  .header section {
+    margin: 15px 0 0 0;
+  }
+  .header section img {
+    width: 30px;
+    height: 30px;
+    margin: 0 8px 0 8px;
+  }
+
+  .checkOut {
+    font-size: 140%;
+    margin: 0 0 40px 0;
+  }
+
+  .project {
+    margin: 50px auto 50px auto;
+  }
+  .project h1 {
+    font-size: 130%;
+    margin: 0 0 13px 0;
+  }
+  .project section {
+    margin: 5px 0 5px 0;
+  }
+
+  .tag {
+    padding: 8px;
+    color: #fff;
+    font-size: 80%;
+    margin: 1px 5px 1px 5px;
+  }
+
+  .dep {
+    font-size: 70%;
+    margin: 1px 5px 1px 5px;
+  }
+
+  .description {
+    margin: 5px 0 0 0;
+    font-size: 100%;
+  }
+
+  .view {
+    font-size: 100%;
+    margin: 20px;
+  }
+
+  .about-section {
+    width: 80%;
+    margin: 80px auto 80px auto;
+  }
+  .about-section span {
+    width: 3px;
+    left: -10px;
+  }
+
+  .about-headline {
+    font-size: 280%;
+    margin: 0 0 13px 0;
+  }
+
+  .about-p {
+    font-size: 100%;
+    line-height: 28px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+  footer p {
+    font-size: 90%;
+  }
+}
+@media (min-width: 1025px) {
+  .logo {
+    font-size: 170%;
+    width: 25%;
+  }
+  .logo i {
+    font-size: 110%;
+  }
+
+  .navbar a, .navbar p {
+    font-size: 100%;
+  }
+  .navbar i {
+    font-size: 75%;
+  }
+
+  .header {
+    margin: 0 0 40px 0;
+  }
+  .header h1 {
+    font-size: 170%;
+    margin: 0 0 13px 0;
+  }
+  .header h2 {
+    font-size: 150%;
+    margin: 0 0 18px 0;
+  }
+  .header p {
+    font-size: 100%;
+  }
+  .header b {
+    font-size: 130%;
+  }
+  .header section {
+    margin: 15px 0 0 0;
+  }
+  .header section img {
+    width: 30px;
+    height: 30px;
+    margin: 0 8px 0 8px;
+  }
+
+  .checkOut {
+    font-size: 170%;
+    margin: 0 0 40px 0;
+  }
+
+  .project {
+    margin: 50px auto 50px auto;
+  }
+  .project h1 {
+    font-size: 130%;
+    margin: 0 0 13px 0;
+  }
+  .project section {
+    margin: 5px 0 5px 0;
+  }
+
+  .tag {
+    padding: 8px;
+    color: #fff;
+    font-size: 80%;
+    margin: 1px 5px 1px 5px;
+  }
+
+  .dep {
+    font-size: 70%;
+    margin: 1px 5px 1px 5px;
+  }
+
+  .description {
+    margin: 5px 0 0 0;
+    font-size: 100%;
+  }
+
+  .view {
+    font-size: 100%;
+  }
+
+  .about-section {
+    width: 80%;
+    margin: 80px auto 80px auto;
+  }
+  .about-section span {
+    width: 3px;
+    left: -10px;
+  }
+
+  .about-headline {
+    font-size: 280%;
+    margin: 0 0 13px 0;
+  }
+
+  .about-p {
+    font-size: 100%;
+    line-height: 28px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+  footer p {
+    font-size: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

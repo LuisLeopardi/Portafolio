@@ -1,0 +1,569 @@
+@import '_config.scss';
+
+* {
+    position: relative;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    color:#000;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(199, 199, 199);
+}
+
+.wrap {
+    background-color: #fff;
+}
+
+.navbar {
+    display: flex;
+    height: 30px;
+    background-color: rgb(215, 213, 233);
+    a, p {
+        @include flex-vertical-center;
+        color: rgb(32, 32, 32);
+        height: 100%;
+        width: 25%;
+        font-size: 70%;
+        &:hover {
+            background-color: rgb(162, 255, 149);
+        }
+    }
+    p {
+        @include flex-vertical-center;
+        cursor: default;
+    }
+    i {
+        @include flex-vertical-center;
+        margin: 0 0 0 2px;
+        font-size: 60%;
+    }
+}
+
+.logo {
+    font-size: 80%;
+    width: 25%;
+    padding: 5px;
+    color: rgb(39, 167, 0);
+    letter-spacing: 1px;
+    i {
+        font-size: 110%;
+        color: rgb(0, 110, 255);
+    }
+}
+
+.header {
+    @include box-with-image-text;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    margin: 0 0 20px 0;
+    img {
+        width: 45%;
+        max-width: 300px;
+        border-radius: 50%;
+        box-shadow: 0 3px 10px 0px rgb(114, 114, 114);
+    }
+    h1 {
+        color: rgb(24, 24, 24);
+        font-size: 100%;
+        margin: 0 0 5px 0;
+    }
+    h2 {
+        color: rgb(77, 77, 77);
+        font-size: 80%;
+        margin: 0 0 10px 0;
+    }
+    p {
+        font-size: 75%;
+        text-align: center;
+    }
+    div {
+        padding: 10px 0 10px 3px;
+        width: 55%;
+    }
+    b {
+        font-size: 110%;
+        color: rgb(1, 160, 1);
+    }
+    b:first-of-type {
+        color: rgb(1, 103, 199);
+    }
+    section {
+        @include flex-center-center;
+        width: 100%;
+        margin: 15px 0 0 0;
+        img {
+            width: 20px;
+            height: 20px;
+            border-radius: 0;
+            box-shadow: none;
+            cursor: pointer;
+            margin: 0 2px 0 2px;
+        }
+    }
+}
+
+.checkOut {
+    text-align: center;
+    width: 100%;
+    font-size: 110%;
+    color: rgb(29, 29, 29);
+}
+
+.project {
+    @include box-with-image-text;
+    max-width: 800px;
+    margin: 20px 0 20px 0;
+    box-shadow: 1px 1px 10px 2px rgba(65, 65, 65, 0.5);
+    background-color: rgb(235, 235, 235);
+    padding: 10px 0 10px 0;
+    img {
+        width: 50%;
+        max-width: 500px;
+    }
+    h1 {
+        color: rgb(24, 24, 24);
+        font-size: 90%;
+        text-align: center;
+        margin: 0 0 5px 0;
+    }
+    div {
+        width: 50%;
+        padding: 0 0 0 6px;
+    }
+    section {
+        @include flex-center-center;
+    }
+    &:last-of-type {
+        margin: 20px auto 0 auto;
+        padding: 0 0 20px 0;
+    }
+}
+
+.tag {
+    padding: 4px;
+    background-color: blue;
+    color: #fff;
+    font-size: 60%;
+    border-radius: 2px;
+    margin: 1px;
+}
+
+.dep {
+    color: rgb(99, 99, 99);
+    font-size: 60%;
+    margin: 1px;
+}
+
+.description {
+    margin: 2px 0 0 0;
+    font-size: 65%;
+    text-align: center;
+}
+
+.view {
+    padding: 6px;
+    margin: 8px 10px 5px 10px;
+    font-size: 60%;
+    width: 35%;
+    max-width: 200px;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: 0.1s linear all;
+}
+
+.online {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: rgb(0, 140, 255);
+    &:hover {
+        background-color: rgba(0, 140, 255, 0.356);
+        color: rgb(0, 0, 0);
+    }
+}
+
+.github {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: rgb(0, 255, 13);
+    &:hover {
+        background-color: rgba(0, 255, 13, 0.356);
+        color: rgb(0, 0, 0);
+    }
+}
+
+.about-section {
+    margin: 20px 0 20px 0;
+    padding: 0 10px 0 15px;
+    span {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        left: 3px;
+        top: 0;
+    }
+}
+
+.about-headline {
+    font-size: 90%;
+    color: rgb(22, 22, 22);
+    margin: 0 0 10px 0;
+}
+
+.about-p {
+    line-height: 22px;
+    font-size: 80%;
+}
+
+footer {
+    padding: 5px;
+    margin: 20px 0 0 0;
+    background-color: rgb(215, 213, 233);
+    letter-spacing: 1px;
+    p {
+        font-size: 70%;
+        color: rgb(34, 34, 34);  
+    }
+}
+
+@media (min-width:481px) {
+    .logo {
+        font-size: 120%;
+        width: 25%;
+        padding: 5px;
+        i {
+            font-size: 110%;
+        }
+    }
+    .navbar {
+        height: 40px;
+        a, p {
+            width: 25%;
+            font-size: 90%;
+        }
+        i {
+            margin: 0 0 0 2px;
+            font-size: 70%;
+        }
+    }
+    .header {
+        padding-top: 15px;
+        margin: 0 0 30px 0;
+        h1 {
+            font-size: 120%;
+            margin: 0 0 10px 0;
+        }
+        h2 {
+            font-size: 100%;
+            margin: 0 0 15px 0;
+        }
+        p {
+            font-size: 90%;
+        }
+        div {
+            padding: 10px 0 10px 3px;
+        }
+        b {
+            font-size: 120%;
+        }
+        section {
+            margin: 15px 0 0 0;
+            img {
+                width: 25px;
+                height: 25px;
+                margin: 0 5px 0 5px;
+            }
+        }
+    }
+
+    .checkOut {
+        text-align: center;
+        width: 100%;
+        font-size: 120%;
+        color: rgb(29, 29, 29);
+        margin: 0 0 30px 0;
+    }
+    
+    .project {
+        margin: 20px 0 20px 0;
+        h1 {
+            font-size:110%;
+            margin: 0 0 10px 0;
+        }
+    }
+    
+    .tag {
+        padding: 6px;
+        color: #fff;
+        font-size: 70%;
+        border-radius: 5px;
+        margin: 1px 3px 1px 3px;
+    }
+    
+    .dep {
+        font-size: 65%;
+        margin: 5px 3px 1px 3px;
+    }
+    
+    .description {
+        margin: 5px 0 0 0;
+        font-size: 80%;
+    }
+    
+    .view {
+        font-size: 80%;
+        width: 35%;
+    }
+    
+    .online, .github {
+        border-width: 0 0 2px 0;
+    }
+    
+    .about-section {
+        margin: 40px 0 40px 0;
+        padding: 0 10px 0 15px;
+    }
+    
+    .about-headline {
+        font-size: 120%;
+        color: rgb(22, 22, 22);
+        margin: 0 0 10px 0;
+    }
+    
+    .about-p {
+        line-height: 22px;
+        font-size: 100%;
+    }
+
+    footer {
+        padding: 10px;
+        p {
+            font-size: 80%;
+        }
+    }
+}
+
+@media (min-width:769px) {
+    .wrap {
+        width: 90%;
+        margin: auto;
+    }
+    .logo {
+        padding: 10px 0 10px 30px;
+        font-size: 150%;
+        width: 25%;
+        i {
+            font-size: 110%;
+        }
+    }
+    .navbar {
+        a, p {
+            font-size: 100%;
+        }
+        i {
+            font-size: 75%;
+        }
+    }
+    .header {
+        margin: 0 0 40px 0;
+        h1 {
+            font-size: 150%;
+            margin: 0 0 13px 0;
+        }
+        h2 {
+            font-size: 120%;
+            margin: 0 0 18px 0;
+        }
+        p {
+            font-size: 100%;
+        }
+        b {
+            font-size: 130%;
+        }
+        section {
+            margin: 15px 0 0 0;
+            img {
+                width: 30px;
+                height: 30px;
+                margin: 0 8px 0 8px;
+            }
+        }
+    }
+
+    .checkOut {
+        font-size: 140%;
+        margin: 0 0 40px 0;
+    }
+    
+    .project {
+        margin: 50px auto 50px auto;
+        h1 {
+            font-size:130%;
+            margin: 0 0 13px 0;
+        }
+        section {
+            margin: 5px 0 5px 0;
+        }
+    }
+    
+    .tag {
+        padding: 8px;
+        color: #fff;
+        font-size: 80%;
+        margin: 1px 5px 1px 5px;
+    }
+    
+    .dep {
+        font-size: 70%;
+        margin: 1px 5px 1px 5px;
+    }
+    
+    .description {
+        margin: 5px 0 0 0;
+        font-size: 100%;
+    }
+    
+    .view {
+        font-size: 100%;
+        margin: 20px;
+    }
+
+    .about-section {
+        width: 80%;
+        margin: 80px auto 80px auto;
+        span {
+            width: 3px;
+            left: -10px;
+        }
+    }
+    
+    .about-headline {
+        font-size: 280%;
+        margin: 0 0 13px 0;
+    }
+    
+    .about-p {
+        font-size: 100%;
+        line-height: 28px;
+    }
+    footer {
+        padding: 15px;
+        p {
+            font-size: 90%;
+        }
+    }
+}
+
+@media (min-width:1025px) {
+    .logo {
+        font-size: 170%;
+        width: 25%;
+        i {
+            font-size: 110%;
+        }
+    }
+    .navbar {
+        a, p {
+            font-size: 100%;
+        }
+        i {
+            font-size: 75%;
+        }
+    }
+    .header {
+        margin: 0 0 40px 0;
+        h1 {
+            font-size: 170%;
+            margin: 0 0 13px 0;
+        }
+        h2 {
+            font-size: 150%;
+            margin: 0 0 18px 0;
+        }
+        p {
+            font-size: 100%;
+        }
+        b {
+            font-size: 130%;
+        }
+        section {
+            margin: 15px 0 0 0;
+            img {
+                width: 30px;
+                height: 30px;
+                margin: 0 8px 0 8px;
+            }
+        }
+    }
+
+    .checkOut {
+        font-size: 170%;
+        margin: 0 0 40px 0;
+    }
+    
+    .project {
+        margin: 50px auto 50px auto;
+        h1 {
+            font-size:130%;
+            margin: 0 0 13px 0;
+        }
+        section {
+            margin: 5px 0 5px 0;
+        }
+    }
+    
+    .tag {
+        padding: 8px;
+        color: #fff;
+        font-size: 80%;
+        margin: 1px 5px 1px 5px;
+    }
+    
+    .dep {
+        font-size: 70%;
+        margin: 1px 5px 1px 5px;
+    }
+    
+    .description {
+        margin: 5px 0 0 0;
+        font-size: 100%;
+    }
+    
+    .view {
+        font-size: 100%;
+    }
+
+    .about-section {
+        width: 80%;
+        margin: 80px auto 80px auto;
+        span {
+            width: 3px;
+            left: -10px;
+        }
+    }
+    
+    .about-headline {
+        font-size: 280%;
+        margin: 0 0 13px 0;
+    }
+    
+    .about-p {
+        font-size: 100%;
+        line-height: 28px;
+    }
+
+    footer {
+        padding: 20px;
+        p {
+            font-size: 100%;
+        }
+    }
+}
+
