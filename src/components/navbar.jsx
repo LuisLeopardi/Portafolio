@@ -7,7 +7,7 @@ return (
     <Router>
     <h1 className='logo'> Websites <br/> <i>&amp; apps </i>  </h1>
     <nav className='navbar'>     
-        <NavLink to="/Portafolio"> Projects </NavLink>
+        <NavLink to="/Portafolio/"> Projects </NavLink>
         <NavLink to="/Portafolio/about/"> About me </NavLink>   
         <p >Order <i>(comming soon)</i>  </p>
     </nav>
