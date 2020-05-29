@@ -14,7 +14,7 @@ return (
 
 <Router>
   <Switch>
-    <Route exact path="/" Component={FrontPage} />
+    <Route path="/Portafolio" Component={FrontPage} />
     <Route path="/about" Component={About} />
   </Switch>
 </Router>
