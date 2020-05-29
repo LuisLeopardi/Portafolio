@@ -12,12 +12,12 @@ return (
 
 <Navbar/>
 
-<HashRouter basename='/'>
+<Router>
   <Switch>
     <Route exact path="/" Component={FrontPage} />
     <Route path="/about" Component={About} />
   </Switch>
-</HashRouter>
+</Router>
 
 <Footer/>
 

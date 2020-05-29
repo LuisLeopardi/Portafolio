@@ -7,8 +7,8 @@ return (
     <Router>
     <h1 className='logo'> Websites <br/> <i>&amp; apps </i>  </h1>
     <nav className='navbar'>     
-        <Link to="/" exact> Projects </Link>
-        <Link to="/about" exact> About me </Link>   
+        <Link to="/"> Projects </Link>
+        <Link to="/about"> About me </Link>   
         <p >Order <i>(comming soon)</i>  </p>
     </nav>
     </Router>
