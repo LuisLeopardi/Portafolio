@@ -12,12 +12,7 @@ return (
 
 <Navbar/>
 
-<Router>
-  <Switch>
-    <Route path="/Portafolio" Component={FrontPage} />
-    <Route path="/about" Component={About} />
-  </Switch>
-</Router>
+<FrontPage/>
 
 <Footer/>
 
