@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './css/style.css';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, HashRouter, Route} from 'react-router-dom';
 import FrontPage from './components/frontPage.jsx';
 import {Navbar} from './components/navbar.jsx';
 import {About} from './components/about.jsx';
@@ -12,12 +12,12 @@ return (
 
 <Navbar/>
 
-<Router>
+<HashRouter basename='/'>
   <Switch>
-    <Route exact path="https://luisleopardi.github.io/Portafolio/" exact render={()=> <FrontPage/> }> </Route>
-    <Route path="https://luisleopardi.github.io/Portafolio/about/" exact render={()=> <About/> }> </Route>
+    <Route exact path="/" Component={FrontPage} />
+    <Route path="/about" Component={About} />
   </Switch>
-</Router>
+</HashRouter>
 
 <Footer/>
 
