@@ -14,8 +14,8 @@ return (
 
 <Router>
   <Switch>
-    <Route exact path="/Portafolio/" exact render={()=> <FrontPage/> }> </Route>
-    <Route path="/about" exact render={()=> <About/> }> </Route>
+    <Route exact path="https://luisleopardi.github.io/Portafolio/" exact render={()=> <FrontPage/> }> </Route>
+    <Route path="https://luisleopardi.github.io/Portafolio/about/" exact render={()=> <About/> }> </Route>
   </Switch>
 </Router>
 

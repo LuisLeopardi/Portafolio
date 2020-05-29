@@ -7,8 +7,8 @@ return (
     <Router>
     <h1 className='logo'> Websites <br/> <i>&amp; apps </i>  </h1>
     <nav className='navbar'>     
-        <NavLink to="/" exact> Projects </NavLink>
-        <NavLink to="/about" exact> About me </NavLink>   
+        <NavLink to="https://luisleopardi.github.io/Portafolio/" exact> Projects </NavLink>
+        <NavLink to="https://luisleopardi.github.io/Portafolio/about/" exact> About me </NavLink>   
         <p >Order <i>(comming soon)</i>  </p>
     </nav>
     </Router>
