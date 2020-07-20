@@ -20,66 +20,34 @@ body {
     background-color: #fff;
 }
 
-.navbar {
-    display: flex;
-    height: 30px;
-    background-color: rgb(215, 213, 233);
-    a, p {
-        @include flex-vertical-center;
-        color: rgb(32, 32, 32);
-        height: 100%;
-        width: 25%;
-        font-size: 70%;
-        &:hover {
-            background-color: rgb(162, 255, 149);
-        }
-    }
-    p {
-        @include flex-vertical-center;
-        cursor: default;
-    }
-    i {
-        @include flex-vertical-center;
-        margin: 0 0 0 2px;
-        font-size: 60%;
-    }
-}
-
-.logo {
-    font-size: 80%;
-    width: 25%;
-    padding: 5px;
-    color: rgb(39, 167, 0);
-    letter-spacing: 1px;
-    i {
-        font-size: 110%;
-        color: rgb(0, 110, 255);
-    }
-}
-
 .header {
     @include box-with-image-text;
     justify-content: center;
     align-content: center;
-    padding: 5px;
+    padding: 55px 5px 20px 5px;
     margin: 0 0 20px 0;
+    background-color: rgb(26, 26, 26);
     img {
         width: 45%;
         max-width: 300px;
         border-radius: 50%;
-        box-shadow: 0 3px 10px 0px rgb(114, 114, 114);
+        box-shadow: 0 3px 10px 0px rgb(0, 0, 0);
     }
     h1 {
-        color: rgb(24, 24, 24);
+        color: rgb(255, 255, 255);
+        letter-spacing: 3px;
         font-size: 100%;
         margin: 0 0 5px 0;
     }
     h2 {
-        color: rgb(77, 77, 77);
+        text-align: center;
+        letter-spacing: 3px;
+        color: rgb(255, 255, 255);
         font-size: 80%;
         margin: 0 0 10px 0;
     }
     p {
+        color: rgb(175, 175, 175);
         font-size: 75%;
         text-align: center;
     }
@@ -87,12 +55,15 @@ body {
         padding: 10px 0 10px 3px;
         width: 55%;
     }
-    b {
+    h3 {
+        font-weight: normal;
+        display: inline;
+        letter-spacing: 2px;
         font-size: 110%;
-        color: rgb(1, 160, 1);
+        color: rgb(0, 255, 13);
     }
-    b:first-of-type {
-        color: rgb(1, 103, 199);
+    h3:first-of-type {
+        color: rgb(0, 140, 255);
     }
     section {
         @include flex-center-center;
@@ -107,6 +78,45 @@ body {
             margin: 0 2px 0 2px;
         }
     }
+    span {
+        position: absolute;
+        bottom: 3px;
+        right: 5px;
+        color: rgb(255, 255, 255);
+        font-size: 80%;
+    }
+}
+
+.decoration-wrap {
+    @include flex-center-center;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.line {
+    height: 2px;
+    width: 40%;
+    background-color: rgb(255, 187, 0);
+    P{
+        position: absolute;
+        top:-20px;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 6px;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 0 10px;
+    border-radius: 50%;
+    border: 2px solid rgb(44, 44, 44);
+    background-color: #fff;
 }
 
 .checkOut {
@@ -117,33 +127,33 @@ body {
 }
 
 .project {
-    @include box-with-image-text;
+    @include flex-vertical-center;
     max-width: 800px;
     margin: 20px 0 20px 0;
     box-shadow: 1px 1px 10px 2px rgba(65, 65, 65, 0.5);
-    background-color: rgb(235, 235, 235);
-    padding: 10px 0 10px 0;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0 0 0;
     img {
-        width: 50%;
+        width: 80%;
         max-width: 500px;
+        box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.44);
     }
     h1 {
-        color: rgb(24, 24, 24);
-        font-size: 90%;
+        font-size: 100%;
         text-align: center;
         margin: 0 0 5px 0;
     }
     div {
-        width: 50%;
-        padding: 0 0 0 6px;
+        width: 100%;
     }
     section {
         @include flex-center-center;
     }
-    &:last-of-type {
-        margin: 20px auto 0 auto;
-        padding: 0 0 20px 0;
-    }
+}
+
+.projectWrap{
+    @include flex-vertical-center;
+    padding: 5px;
 }
 
 .tag {
@@ -152,7 +162,7 @@ body {
     color: #fff;
     font-size: 60%;
     border-radius: 2px;
-    margin: 1px;
+    margin: 3px;
 }
 
 .dep {
@@ -162,99 +172,71 @@ body {
 }
 
 .description {
-    margin: 2px 0 0 0;
-    font-size: 65%;
+    margin: 5px 0 5px 0;
+    font-size: 85%;
     text-align: center;
+}
+
+.projectFooter {
+    @include flex-center-center;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
 }
 
 .view {
     padding: 6px;
     margin: 8px 10px 5px 10px;
     font-size: 60%;
-    width: 35%;
-    max-width: 200px;
+    width: 100px;
     text-align: center;
     letter-spacing: 1px;
     transition: 0.1s linear all;
 }
 
 .online {
-    border-width: 0 0 1px 0;
-    border-style: solid;
-    border-color: rgb(0, 140, 255);
+    color: rgb(0, 195, 255);
+    border: 1px solid rgb(0, 195, 255);
     &:hover {
-        background-color: rgba(0, 140, 255, 0.356);
-        color: rgb(0, 0, 0);
+        color: #fff;
+        background-color: rgb(0, 195, 255);
     }
 }
 
 .github {
-    border-width: 0 0 1px 0;
-    border-style: solid;
-    border-color: rgb(0, 255, 13);
+    color: rgb(0, 255, 13);
+    border: 1px solid rgb(0, 255, 13);
     &:hover {
-        background-color: rgba(0, 255, 13, 0.356);
-        color: rgb(0, 0, 0);
+        color: #fff;
+        background-color: rgb(0, 255, 13);
     }
-}
-
-.about-section {
-    margin: 20px 0 20px 0;
-    padding: 0 10px 0 15px;
-    span {
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 2px;
-        left: 3px;
-        top: 0;
-    }
-}
-
-.about-headline {
-    font-size: 90%;
-    color: rgb(22, 22, 22);
-    margin: 0 0 10px 0;
-}
-
-.about-p {
-    line-height: 22px;
-    font-size: 80%;
 }
 
 footer {
     padding: 5px;
-    margin: 20px 0 0 0;
-    background-color: rgb(215, 213, 233);
+    margin: 80px 0 0 0;
+    background-color: rgb(31, 31, 31);
     letter-spacing: 1px;
     p {
         font-size: 70%;
-        color: rgb(34, 34, 34);  
+        color: rgb(255, 255, 255);  
+    } 
+    a {
+        color: rgb(0, 247, 255);
     }
 }
 
 @media (min-width:481px) {
-    .logo {
-        font-size: 120%;
-        width: 25%;
-        padding: 5px;
-        i {
-            font-size: 110%;
-        }
+
+    .decoration-wrap, .two {
+        top: 45px;
     }
-    .navbar {
-        height: 40px;
-        a, p {
-            width: 25%;
-            font-size: 90%;
-        }
-        i {
-            margin: 0 0 0 2px;
-            font-size: 70%;
-        }
+
+    .two {
+        top:-35px
     }
+
     .header {
-        padding-top: 15px;
+        padding-top: 85px;
         margin: 0 0 30px 0;
         h1 {
             font-size: 120%;
@@ -292,29 +274,26 @@ footer {
     }
     
     .project {
-        margin: 20px 0 20px 0;
         h1 {
-            font-size:110%;
-            margin: 0 0 10px 0;
+            font-size: 120%;
+            margin: 10px 0 5px 0;
         }
     }
-    
+
     .tag {
         padding: 6px;
         color: #fff;
-        font-size: 70%;
-        border-radius: 5px;
-        margin: 1px 3px 1px 3px;
+        font-size: 76%;
     }
     
     .dep {
-        font-size: 65%;
+        font-size: 85%;
         margin: 5px 3px 1px 3px;
     }
     
     .description {
-        margin: 5px 0 0 0;
-        font-size: 80%;
+        margin: 10px 0 10px 0;
+        font-size: 100%;
     }
     
     .view {
@@ -324,22 +303,6 @@ footer {
     
     .online, .github {
         border-width: 0 0 2px 0;
-    }
-    
-    .about-section {
-        margin: 40px 0 40px 0;
-        padding: 0 10px 0 15px;
-    }
-    
-    .about-headline {
-        font-size: 120%;
-        color: rgb(22, 22, 22);
-        margin: 0 0 10px 0;
-    }
-    
-    .about-p {
-        line-height: 22px;
-        font-size: 100%;
     }
 
     footer {
@@ -351,26 +314,16 @@ footer {
 }
 
 @media (min-width:769px) {
-    .wrap {
-        width: 90%;
-        margin: auto;
-    }
-    .logo {
-        padding: 10px 0 10px 30px;
-        font-size: 150%;
-        width: 25%;
-        i {
-            font-size: 110%;
+    .line {
+        height: 2px;
+        width: 40%;
+        P, a {
+            font-size: 130%;
+            top:-25px;
+            letter-spacing: 6px;
         }
     }
-    .navbar {
-        a, p {
-            font-size: 100%;
-        }
-        i {
-            font-size: 75%;
-        }
-    }
+
     .header {
         margin: 0 0 40px 0;
         h1 {
@@ -403,26 +356,27 @@ footer {
     }
     
     .project {
+        @include flex-center-center;
+        flex-direction: row;
         margin: 50px auto 50px auto;
-        h1 {
-            font-size:130%;
-            margin: 0 0 13px 0;
-        }
-        section {
-            margin: 5px 0 5px 0;
-        }
+       h1 {
+           font-size: 120%;
+       }
+       img {
+           width: 50%;
+       }
     }
-    
-    .tag {
-        padding: 8px;
-        color: #fff;
-        font-size: 80%;
-        margin: 1px 5px 1px 5px;
+
+    .projectFooter {
+        margin: 10px 0 0 0;
+    }
+
+    .projectWrap {
+        width: 50% !important;
     }
     
     .dep {
-        font-size: 70%;
-        margin: 1px 5px 1px 5px;
+        font-size: 80%;
     }
     
     .description {
@@ -432,36 +386,24 @@ footer {
     
     .view {
         font-size: 100%;
-        margin: 20px;
+        font-size: 80%;
+        margin: 5px 6px 5px 6px;
     }
 
-    .about-section {
-        width: 80%;
-        margin: 80px auto 80px auto;
-        span {
-            width: 3px;
-            left: -10px;
-        }
-    }
-    
-    .about-headline {
-        font-size: 280%;
-        margin: 0 0 13px 0;
-    }
-    
-    .about-p {
-        font-size: 100%;
-        line-height: 28px;
-    }
-    footer {
-        padding: 15px;
-        p {
-            font-size: 90%;
-        }
-    }
 }
 
 @media (min-width:1025px) {
+
+    .line {
+        height: 2px;
+        width: 40%;
+        P, a {
+            font-size: 150%;
+            top:-30px;
+            letter-spacing: 8px;
+        }
+    }
+
     .logo {
         font-size: 170%;
         width: 25%;
@@ -469,14 +411,7 @@ footer {
             font-size: 110%;
         }
     }
-    .navbar {
-        a, p {
-            font-size: 100%;
-        }
-        i {
-            font-size: 75%;
-        }
-    }
+
     .header {
         margin: 0 0 40px 0;
         h1 {
@@ -537,7 +472,7 @@ footer {
     }
     
     .view {
-        font-size: 100%;
+        font-size: 70%;
     }
 
     .about-section {

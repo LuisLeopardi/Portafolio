@@ -3,6 +3,6 @@ import React from 'react';
 export const Footer = () => {
 return (
     <footer>
-        <p> email: supernano1998@gmail.com </p>
+        <p> MORE AT <a rel="noopener noreferrer" target='_blank' href='https://github.com/LuisLeopardi?tab=repositories'>GITHUB</a></p>
     </footer>
 )}

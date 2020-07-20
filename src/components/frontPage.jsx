@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Header} from './header.jsx';
 import {Projects} from './projects.jsx';
 import karate from '../img/karate.png';
-
+import chatApp from '../img/chatApp.PNG';
 class FrontPage extends Component {
   
     state = {
@@ -10,21 +10,23 @@ class FrontPage extends Component {
         {
           title:'Karate School Webiste',
           tags: ['react', 'express', 'mongoDB', 'sass'],
-          packages: ['react-router-dom', '@hapi/joi', 'jwstoken', 'mongoose'],
-          description:'App with modern design and backend',
+          packages: ['react-router-dom', '@hapi/joi', 'jwstoken', 'mongoose', 'nodemailer'],
+          description:'Website with modern design and backend',
           img:karate,
           url:'https://glacial-refuge-74459.herokuapp.com',
-          github:''
+          github:'https://github.com/LuisLeopardi/karate',
+          h1Color: 'rgb(0, 110, 255)',
         },
         {
-          title:'News API',
-          tags: ['react', 'css'],
-          packages: false,
-          description:'Watch news from 30.000 diferent sources and 7 categories',
-          img:karate,
-          url:'https://luisleopardi.github.io/newsApi/',
-          github:'https://github.com/LuisLeopardi/newsApi'
-        },
+          title:'Chat App',
+          tags: ['react', 'express', 'mongoDB', 'sass'],
+          packages: ['react-router-dom', '@hapi/joi', 'jwstoken', 'mongoose', 'socket.io', 'express-session'],
+          description:'App with public chat rooms and private messaging',
+          img:chatApp,
+          url:'https://chatapp-luisleopardi.herokuapp.com',
+          github:'https://github.com/LuisLeopardi/chatApp',
+          h1Color: 'rgb(0, 177, 29)',
+        }
       ]
     }
    
@@ -37,11 +39,13 @@ class FrontPage extends Component {
         {
           projects.map(e=> 
           <Projects 
+            key={e.title}
             title={e.title} 
             tags={e.tags} 
             description={e.description} 
             img={e.img} pack={e.packages} 
             url={e.url} github={e.github}
+            h1Color={e.h1Color}
           /> )
         }
       </>
