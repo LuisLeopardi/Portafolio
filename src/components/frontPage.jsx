@@ -14,8 +14,7 @@ class FrontPage extends Component {
           description:'Website with modern design and backend',
           img:karate,
           url:'https://glacial-refuge-74459.herokuapp.com',
-          github:'https://github.com/LuisLeopardi/karate',
-          h1Color: 'rgb(0, 110, 255)',
+          github:'https://github.com/LuisLeopardi/karate'
         },
         {
           title:'Chat App',
@@ -24,8 +23,7 @@ class FrontPage extends Component {
           description:'App with public chat rooms and private messaging',
           img:chatApp,
           url:'https://chatapp-luisleopardi.herokuapp.com',
-          github:'https://github.com/LuisLeopardi/chatApp',
-          h1Color: 'rgb(0, 177, 29)',
+          github:'https://github.com/LuisLeopardi/chatApp'
         }
       ]
     }

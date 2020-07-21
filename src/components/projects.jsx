@@ -5,7 +5,7 @@ return (
     <article className='project'>
         <img src={img} alt="thumbnail"/>
         <div className='projectWrap'>
-            <h1 style={{color:h1Color}}> {title} </h1>
+            <h1> {title} </h1>
             <section>
                 {tags.map(e=> 
                 <p 
