@@ -3,6 +3,7 @@ import {Header} from './header.jsx';
 import {Projects} from './projects.jsx';
 import karate from '../img/karate.png';
 import chatApp from '../img/chatApp.PNG';
+import shop from '../img/chatApp.PNG';
 class FrontPage extends Component {
   
     state = {
@@ -24,6 +25,15 @@ class FrontPage extends Component {
           img:chatApp,
           url:'https://chatapp-luisleopardi.herokuapp.com',
           github:'https://github.com/LuisLeopardi/chatApp'
+        },
+        {
+          title:'Fictional Shop',
+          tags: ['react', 'express', 'mongoDB', 'sass'],
+          packages: ['react-router-dom', 'jwstoken', 'mongoose', 'express-session', 'multer'],
+          description:'A fictional shop where you can not buy anything... Only admins can upload items',
+          img:shop,
+          url:'https://fictional-shop.herokuapp.com',
+          github:'https://github.com/LuisLeopardi/fictional-shop'
         }
       ]
     }
