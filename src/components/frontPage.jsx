@@ -53,7 +53,6 @@ class FrontPage extends Component {
             description={e.description} 
             img={e.img} pack={e.packages} 
             url={e.url} github={e.github}
-            h1Color={e.h1Color}
           /> )
         }
       </>
